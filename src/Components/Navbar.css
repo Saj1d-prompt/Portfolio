@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #113563;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.title{
+    color: white;
+    font-size: 30px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+.links{
+    display: flex;
+    gap: 40px;
+    margin-right: 150px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.links a:hover{
+    color: #61dafb;
+    transition: 0.3s;
+}
