@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar';
 import About from './Components/About';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
@@ -17,9 +17,11 @@ function App() {
     <Router>
       <div className="App">
         <Navbar/>
-        <Intro/>
-        <About/>
-        {/* <Footer/> */}
+        <Routes>
+          <Route path="/" element={<Intro/>}/>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
+        <Footer/>
       </div>
     </Router>
   );

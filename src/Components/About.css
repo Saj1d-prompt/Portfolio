@@ -10,6 +10,10 @@ h2{
     text-align: start;
     margin-left: 100px;
     margin-top: 50px;
+    font-size: 30px;
+}
+h3{
+   color:#61dafb;
 }
 .certificates{
     display: flex;
