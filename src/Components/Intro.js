@@ -34,7 +34,6 @@ export default function Intro() {
         <div className="right">
             <img src={logo} alt=""/>
         </div>
-        
     </div>
     </>
   )

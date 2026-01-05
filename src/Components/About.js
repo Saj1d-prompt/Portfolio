@@ -41,6 +41,13 @@ export default function About() {
             <img src = {BL} alt="B.L Govt. School, Sirajganj"/>
         </div>
       </div>
+      <h2>Experience</h2>
+        <div className='experience'>
+            <h3>Student on Duty</h3>
+            <h4>Department of CSE</h4>
+            <h5>Independent University Bangladesh</h5>
+            <p>Duration: January 2025 - December 2025</p>
+        </div>
     </div>
   )
 }
