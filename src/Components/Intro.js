@@ -25,7 +25,7 @@ export default function Intro() {
     <>
     <div className='container'>
         <div className="left">
-            Hello This is <span className='name'>Sajid-Ul Islam</span>. I am Passionate about <br></br>
+            Hello This is <span className='name'>Sajid-Ul Islam</span>. <br></br> I am Passionate about <br></br>
              <span ref={design} className='design'></span>
             <div className='button'>
                 <a href="./cv.pdf" target="_blank" rel='noopener noreferrer'>Download CV</a>
@@ -34,8 +34,9 @@ export default function Intro() {
         <div className="right">
             <img src={logo} alt=""/>
         </div>
+        
     </div>
-    
+    <hr></hr>
     </>
   )
 }
