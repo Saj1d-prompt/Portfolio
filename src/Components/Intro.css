@@ -29,3 +29,23 @@ body{
     width: 35%;
     margin-top: 100px;
 }
+.button{
+    margin-top:20px;
+    padding:10px 20px;
+    font-size:16px;
+    background-color:#61dafb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    width: 160px;
+    text-align: center;
+    margin-left: 105px;
+}
+.button a {
+    color: white;
+    text-decoration: none;
+}
+.button:hover{
+    background-color:#21a1f1;
+}

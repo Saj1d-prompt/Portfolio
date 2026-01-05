@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <Navbar/>
         <Intro/>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </Router>
   );
