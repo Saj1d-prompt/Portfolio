@@ -1,7 +1,4 @@
-import React from 'react'
 import './Project.css'
-import App from '../App';
-import Intro from './Intro';
 import { Link } from 'react-router-dom';
 
 export default function Project() {
