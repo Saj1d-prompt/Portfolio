@@ -4,11 +4,11 @@ import Footer from './Components/Footer';
 import Intro from './Components/Intro';
 import Navbar from './Components/Navbar';
 import About from './Components/About';
+import Project from './Components/Project';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -20,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Intro/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/project" element={<Project/>}/>
         </Routes>
         <Footer/>
       </div>

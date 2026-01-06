@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(11, 40, 83);
+    color:white;
+}
+h2{
+    text-align: start;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.projectItem{
+    background-color: #011645;
+    margin: 20px 100px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.projectH3{
+    color:#80a0ff;
+}
+.tech{
+    color:#61e1fb;
+    font-weight: bold;
+}
+.buttons{
+    margin-top: 15px;
+}
+.buttons a{
+    text-decoration: none;
+    color: white;
+    background-color: #1ebbd6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.buttons a:hover{
+    background-color: #1695a8;
+    color:black
+}
