@@ -2,7 +2,28 @@ import React from 'react'
 import './Contact.css'
 import img from '../images/sajid.jpg'
 export default function Contact() {
-  return (
+    const [userInfo, setUserInfo] = React.useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [msg,setMsg] = React.useState('');
+    function handleChange(event) {
+        const {name, value} = event.target;
+        setUserInfo(prevInfo => ({
+            ...prevInfo,
+            [name]: value
+        }));
+    }
+    function handleMassage() {
+        setTimeout(() => {
+            setMsg('');
+        }, 4000);
+        setMsg(`Thank You ${userInfo.name} for reaching out! But this form is currently non-functional.
+            You can contact me via email.`);
+    }
+
+    return (
     <>
     <div className='contactContainer'>
       <div className='contactInfo'>
@@ -39,15 +60,16 @@ export default function Contact() {
         </div>
         <div className='messageSection'>
             <div className='formContainer'>
-                <h2>Send Me a Message</h2>
+                <h2 className='formTitle'>Send Me a Message</h2>
+                <p className='msg'>{msg}</p>
                 <div className='form'>
-                    <label>Name:</label>
-                    <input type="text" name="name" placeholder='Your Name' />
-                    <label>Email:</label>
-                    <input type="email" name="email" placeholder='Your Email' />
-                    <label>Message:</label>
-                    <textarea name="message" placeholder='Your Message'></textarea>
-                    <button type="submit">Submit</button>
+                    <label>Name</label>
+                    <input type="text" name="name" value ={userInfo.name} onChange={handleChange} placeholder='Your Name' />
+                    <label>Email</label>
+                    <input type="email" name="email" value={userInfo.email} onChange={handleChange} placeholder='Your Email' />
+                    <label>Message</label>
+                    <textarea name="message" value={userInfo.message} onChange={handleChange} placeholder='Your Message' cols="20" rows="10"></textarea>
+                    <button type="submit" onClick={handleMassage}>Submit</button>
                 </div>
             </div>
         </div>

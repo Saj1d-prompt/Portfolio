@@ -14,7 +14,6 @@
     line-height: 1.6;
 }
 
-
 .contactInfo .image img{
     width: 400px;
     height: 400px;
@@ -92,6 +91,16 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+.formTitle{
+    color:#61dafb;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.form label{
+    align-self: flex-start;
+    font-size: 20px;
+}
 .form input, .form textarea{
     padding: 10px;
     font-size: 16px;
@@ -113,4 +122,9 @@
 }
 .form button:hover{
     background-color: #21a1f1;
+}
+.msg{
+    color: #00ffaa;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
