@@ -21,6 +21,7 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
 .projectH3{
     color:#80a0ff;
@@ -43,4 +44,8 @@ h2{
 .buttons a:hover{
     background-color: #1695a8;
     color:black
+}
+.buttons .moreProjects{
+    display: inline-block;
+    margin-bottom: 70px;
 }
