@@ -1,5 +1,8 @@
 import React from 'react'
 import './Project.css'
+import App from '../App';
+import Intro from './Intro';
+import { Link } from 'react-router-dom';
 
 export default function Project() {
   return (
@@ -11,7 +14,7 @@ export default function Project() {
             <p><span className='tech'>Technologies Used:</span> React.js, CSS, HTML</p>
             <div className='buttons'>
                 <a href="https://github.com/Saj1d-prompt/Portfolio" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                <a href="https://yourportfolio.com" target="_blank" rel="noopener noreferrer">Live Netlify</a>
+                <Link to="/" target="_blank" rel="noopener noreferrer">Live Netlify</Link>
             </div>
         </div>
         <div className='projectItem'>
